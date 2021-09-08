@@ -17,3 +17,6 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+to see it in action go to : 
+https://adoring-bell-0a87ec.netlify.app/
