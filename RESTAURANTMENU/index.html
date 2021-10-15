@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1 style="text-align: center">Our Menu</h1>
+      <hr />
+      <div class="header">
+        <button type="button" class="headBtn">All</button>
+        <button type="button" class="headBtn">Breakfast</button>
+        <button type="button" class="headBtn">Lunch</button>
+        <button type="button" class="headBtn">Shakes</button>
+        <button type="button" class="headBtn">Dinner</button>
+      </div>
+      <div class="itemFlex">
+        <div class="items">
+          <div class="item" v-for="(item,index) in items" :key="item.id">
+            <img :src="item.img" alt="item" />
+            <div class="columnItem">
+              <div class="item inline">
+                <h4>{{item.name}}</h4>
+                <span>{{item.prize}}</span>
+              </div>
+              <hr class="secondHr" />
+              <p>{{item.text}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
