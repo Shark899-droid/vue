@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sidebar</title>
+  </head>
+  <body>
+    <div id="app">
+      <span class="material-icons menu" @click="visibility">menu</span>
+      <div class="sideBar" :class="{visible:isVisible}">
+          <div class="topBar">
+        <h3>Coding Addict</h3>
+        <span class="material-icons clear" @click="clear">clear</span>
+        </div>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Projects</li>
+          <li>Contact</li>
+        </ul>
+        <div id="icons">
+        <img src="facebook-icon.png"></img>
+        <img src="linkedin-icon.png"></img>
+        <img src="Twitter-icon.png"></img>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
