@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>About</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>About</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed atque</p>
+      <div style="display: flex; justify-content: center">
+        <div class="sec">
+          <div class="left">
+            <img
+              src="https://images.unsplash.com/photo-1634095925899-247a9d209ab9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1471&q=80"
+              alt="fox"
+            />
+          </div>
+          <div class="right">
+            <div class="rightTop">
+              <button type="button" id="history" @click="history">
+                History
+              </button>
+              <button type="button" id="vision" @click="vision">Vision</button>
+              <button type="button" id="goals" @click="goals">Goals</button>
+            </div>
+            <div class="rightBottom" v-if="isHistory === true">
+              <h3>History</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                veritatis, pariatur cumque quo et, enim quod atque commodi earum
+                sequi laborum! Esse maiores voluptates nam reprehenderit facere,
+                quibusdam ullam dicta nostrum deserunt cupiditate quos
+                assumenda, atque obcaecati amet repellat ducimus!
+              </p>
+            </div>
+            <div class="rightBottom" v-if="isVision === true">
+              <h3>Vision</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                neque corrupti natus temporibus at? Ducimus itaque animi impedit
+                debitis aut reiciendis, sunt asperiores repellendus molestias
+                accusantium, temporibus perspiciatis inventore quos placeat
+                facere ipsa hic illum quasi officia odio ut consectetur.
+              </p>
+            </div>
+            <div class="rightBottom" v-if="isGoals === true">
+              <h3>Goals</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Pariatur incidunt fuga sit nulla, ratione error porro commodi
+                voluptas, voluptatem eos id cupiditate obcaecati dolorum soluta
+                dicta tempore quaerat labore. Aliquid laudantium exercitationem
+                odit sunt in dolores dolorum, expedita repellendus odio.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
